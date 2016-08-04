@@ -46,12 +46,12 @@
         "yum -y update",
         "yum -y install cloud-init cloud-utils-growpart dracut-modules-growroot",
         "echo \"NOZEROCONF=yes\" >> /etc/sysconfig/network",
-        "adduser nishitki",
-        "echo 'nishitki:MySecretPassword' |chpasswd",
-        "mkdir /home/nishitki/.ssh",
-        "chown nishitki:nishitki /home/nishitki/.ssh",
+        "adduser mnishikizawa",
+        "echo 'mnishikizawa:MySecretPassword' |chpasswd",
+        "mkdir /home/mnishikizawa/.ssh",
+        "chown mnishikizawa:mnishikizawa /home/nishitki/.ssh",
         "chmod 700 /home/nishitki/.ssh",
-        "echo \"nishitki ALL=(ALL) ALL\" >> /etc/sudoers",
+        "echo \"mnishikizawa ALL=(ALL) ALL\" >> /etc/sudoers",
 	"yum clean all"
       ]
     },
