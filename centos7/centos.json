@@ -65,13 +65,13 @@
     {
       "type": "file",
       "source": "id_rsa_cloud-user.pub",
-      "destination": "/home/nishiki/.ssh/authorized_keys"
+      "destination": "/home/mnishikizawa/.ssh/authorized_keys"
     },
     {
      "type": "shell",
       "inline": [
-        "chmod 600 /home/nishitki/.ssh/authorized_keys",
-        "chown nishitki:nishitki /home/nishitki/.ssh/authorized_keys",
+        "chmod 600 /home/mnishikizawa/.ssh/authorized_keys",
+        "chown mnishikizawa:mnishikizawa /home/mnishikizawa/.ssh/authorized_keys",
 	"echo package_upgrade: true >>/etc/cloud/cloud.cfg"
       ]
     }
