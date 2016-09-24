@@ -25,7 +25,7 @@
          "qemu_binary": "/usr/libexec/qemu-kvm",
          "ssh_port": 22,
          "ssh_wait_timeout": "900m",
-         "vm_name": "swan.sys.intra-disk0",
+         "vm_name": "ubuntu16-disk0",
 
          "boot_wait": "2s",
          "qemuargs": [
