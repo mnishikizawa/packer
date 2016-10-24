@@ -1,0 +1,1128 @@
+2016/10/24 19:01:48 [INFO] Packer version: 0.10.2
+2016/10/24 19:01:48 Packer Target OS/Arch: darwin amd64
+2016/10/24 19:01:48 Built with Go Version: go1.7.1
+2016/10/24 19:01:48 Detected home directory from env var: /Users/mnishikizawa
+2016/10/24 19:01:48 Using internal plugin for amazon-instance
+2016/10/24 19:01:48 Using internal plugin for parallels-iso
+2016/10/24 19:01:48 Using internal plugin for parallels-pvm
+2016/10/24 19:01:48 Using internal plugin for amazon-ebs
+2016/10/24 19:01:48 Using internal plugin for null
+2016/10/24 19:01:48 Using internal plugin for qemu
+2016/10/24 19:01:48 Using internal plugin for file
+2016/10/24 19:01:48 Using internal plugin for virtualbox-iso
+2016/10/24 19:01:48 Using internal plugin for vmware-iso
+2016/10/24 19:01:48 Using internal plugin for amazon-chroot
+2016/10/24 19:01:48 Using internal plugin for digitalocean
+2016/10/24 19:01:48 Using internal plugin for docker
+2016/10/24 19:01:48 Using internal plugin for googlecompute
+2016/10/24 19:01:48 Using internal plugin for openstack
+2016/10/24 19:01:48 Using internal plugin for virtualbox-ovf
+2016/10/24 19:01:48 Using internal plugin for vmware-vmx
+2016/10/24 19:01:48 Using internal plugin for azure-arm
+2016/10/24 19:01:48 Using internal plugin for ansible
+2016/10/24 19:01:48 Using internal plugin for ansible-local
+2016/10/24 19:01:48 Using internal plugin for chef-client
+2016/10/24 19:01:48 Using internal plugin for powershell
+2016/10/24 19:01:48 Using internal plugin for puppet-server
+2016/10/24 19:01:48 Using internal plugin for windows-restart
+2016/10/24 19:01:48 Using internal plugin for windows-shell
+2016/10/24 19:01:48 Using internal plugin for chef-solo
+2016/10/24 19:01:48 Using internal plugin for file
+2016/10/24 19:01:48 Using internal plugin for puppet-masterless
+2016/10/24 19:01:48 Using internal plugin for salt-masterless
+2016/10/24 19:01:48 Using internal plugin for shell
+2016/10/24 19:01:48 Using internal plugin for shell-local
+2016/10/24 19:01:48 Using internal plugin for docker-push
+2016/10/24 19:01:48 Using internal plugin for docker-tag
+2016/10/24 19:01:48 Using internal plugin for vagrant
+2016/10/24 19:01:48 Using internal plugin for vagrant-cloud
+2016/10/24 19:01:48 Using internal plugin for vsphere
+2016/10/24 19:01:48 Using internal plugin for amazon-import
+2016/10/24 19:01:48 Using internal plugin for compress
+2016/10/24 19:01:48 Using internal plugin for docker-import
+2016/10/24 19:01:48 Using internal plugin for shell-local
+2016/10/24 19:01:48 Using internal plugin for artifice
+2016/10/24 19:01:48 Using internal plugin for atlas
+2016/10/24 19:01:48 Using internal plugin for docker-save
+2016/10/24 19:01:48 Detected home directory from env var: /Users/mnishikizawa
+2016/10/24 19:01:48 Attempting to open config file: /Users/mnishikizawa/.packerconfig
+2016/10/24 19:01:48 [WARN] Config file doesn't exist: /Users/mnishikizawa/.packerconfig
+2016/10/24 19:01:48 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[vmware-iso:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso docker:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker azure-arm:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm qemu:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu googlecompute:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute virtualbox-ovf:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf amazon-instance:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance parallels-pvm:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm amazon-ebs:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs amazon-chroot:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot digitalocean:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean openstack:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack vmware-vmx:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx parallels-iso:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso null:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null file:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file virtualbox-iso:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso] PostProcessors:map[docker-tag:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag vagrant:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant vsphere:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere docker-import:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import atlas:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-atlas docker-save:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save docker-push:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push vagrant-cloud:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud amazon-import:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import compress:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress shell-local:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local artifice:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice] Provisioners:map[shell:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell windows-shell:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell file:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file salt-masterless:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless powershell:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell puppet-server:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server windows-restart:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart chef-solo:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo puppet-masterless:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless ansible:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible ansible-local:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local chef-client:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client shell-local:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local]}
+2016/10/24 19:01:48 Setting cache directory: /Users/mnishikizawa/.ghq/github.com/mnishikizawa/packer/virtualbox/centos7/packer_cache
+2016/10/24 19:01:48 Detected home directory from env var: /Users/mnishikizawa
+2016/10/24 19:01:48 Loading builder: virtualbox-iso
+2016/10/24 19:01:48 Plugin could not be found. Checking same directory as executable.
+2016/10/24 19:01:48 Current exe path: /usr/local/Cellar/packer/0.10.2/bin/packer
+2016/10/24 19:01:48 Creating plugin client for path: /usr/local/Cellar/packer/0.10.2/bin/packer
+2016/10/24 19:01:48 Starting plugin: /usr/local/Cellar/packer/0.10.2/bin/packer []string{"/usr/local/Cellar/packer/0.10.2/bin/packer", "plugin", "packer-builder-virtualbox-iso"}
+2016/10/24 19:01:48 Waiting for RPC address for: /usr/local/Cellar/packer/0.10.2/bin/packer
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 [INFO] Packer version: 0.10.2
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Packer Target OS/Arch: darwin amd64
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Built with Go Version: go1.7.1
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Detected home directory from env var: /Users/mnishikizawa
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for amazon-instance
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for docker
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for null
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for parallels-pvm
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for vmware-vmx
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for amazon-chroot
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for file
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for googlecompute
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for azure-arm
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for digitalocean
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for openstack
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for virtualbox-iso
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for virtualbox-ovf
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for vmware-iso
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for amazon-ebs
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for parallels-iso
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for qemu
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for ansible
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for ansible-local
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for chef-client
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for powershell
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for puppet-masterless
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for puppet-server
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for salt-masterless
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for shell
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for shell-local
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for windows-restart
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for chef-solo
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for file
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for windows-shell
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for amazon-import
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for atlas
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for compress
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for docker-push
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for docker-tag
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for shell-local
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for artifice
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for docker-import
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for docker-save
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for vagrant
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for vagrant-cloud
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for vsphere
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Detected home directory from env var: /Users/mnishikizawa
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Attempting to open config file: /Users/mnishikizawa/.packerconfig
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 [WARN] Config file doesn't exist: /Users/mnishikizawa/.packerconfig
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[amazon-instance:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance null:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null azure-arm:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm digitalocean:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean parallels-iso:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso docker:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker vmware-vmx:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx amazon-chroot:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot openstack:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack amazon-ebs:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs parallels-pvm:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm file:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file googlecompute:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute virtualbox-iso:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso virtualbox-ovf:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf vmware-iso:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso qemu:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu] PostProcessors:map[docker-save:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save vagrant:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant vagrant-cloud:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud vsphere:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere shell-local:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local atlas:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-atlas compress:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress docker-push:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push docker-tag:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag artifice:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice docker-import:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import amazon-import:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import] Provisioners:map[windows-shell:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell chef-client:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client powershell:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell puppet-masterless:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless chef-solo:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo shell:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell shell-local:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local windows-restart:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart file:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file ansible:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible ansible-local:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local puppet-server:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server salt-masterless:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless]}
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Setting cache directory: /Users/mnishikizawa/.ghq/github.com/mnishikizawa/packer/virtualbox/centos7/packer_cache
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 args: []string{"packer-builder-virtualbox-iso"}
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Detected home directory from env var: /Users/mnishikizawa
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Plugin minimum port: 10000
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Plugin maximum port: 25000
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Plugin address: unix /var/folders/xf/j94wnxm11r5bvqvy6pm92g2xnt54lk/T/packer-plugin675429214
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Waiting for connection...
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Serving a plugin connection...
+2016/10/24 19:01:48 Loading post-processor: vagrant
+2016/10/24 19:01:48 Plugin could not be found. Checking same directory as executable.
+2016/10/24 19:01:48 Current exe path: /usr/local/Cellar/packer/0.10.2/bin/packer
+2016/10/24 19:01:48 Creating plugin client for path: /usr/local/Cellar/packer/0.10.2/bin/packer
+2016/10/24 19:01:48 Starting plugin: /usr/local/Cellar/packer/0.10.2/bin/packer []string{"/usr/local/Cellar/packer/0.10.2/bin/packer", "plugin", "packer-post-processor-vagrant"}
+2016/10/24 19:01:48 Waiting for RPC address for: /usr/local/Cellar/packer/0.10.2/bin/packer
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 [INFO] Packer version: 0.10.2
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Packer Target OS/Arch: darwin amd64
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Built with Go Version: go1.7.1
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Detected home directory from env var: /Users/mnishikizawa
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for amazon-chroot
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for amazon-ebs
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for amazon-instance
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for azure-arm
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for docker
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for virtualbox-iso
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for vmware-vmx
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for file
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for null
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for qemu
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for digitalocean
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for googlecompute
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for openstack
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for parallels-iso
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for vmware-iso
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for parallels-pvm
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for virtualbox-ovf
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for chef-client
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for chef-solo
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for powershell
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for puppet-masterless
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for puppet-server
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for shell
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for shell-local
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for ansible
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for windows-restart
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for file
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for salt-masterless
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for windows-shell
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for ansible-local
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for docker-save
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for shell-local
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for vagrant-cloud
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for vsphere
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for artifice
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for docker-import
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for docker-push
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for docker-tag
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for vagrant
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for amazon-import
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for atlas
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Using internal plugin for compress
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Detected home directory from env var: /Users/mnishikizawa
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Attempting to open config file: /Users/mnishikizawa/.packerconfig
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 [WARN] Config file doesn't exist: /Users/mnishikizawa/.packerconfig
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[amazon-chroot:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot googlecompute:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute vmware-iso:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso vmware-vmx:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx digitalocean:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean openstack:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack parallels-iso:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso parallels-pvm:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm file:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file virtualbox-ovf:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf amazon-ebs:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs amazon-instance:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance azure-arm:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm docker:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker virtualbox-iso:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso null:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null qemu:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu] PostProcessors:map[docker-push:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push vagrant:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant amazon-import:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import atlas:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-atlas docker-save:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save vagrant-cloud:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud vsphere:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere artifice:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice compress:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress shell-local:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local docker-import:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import docker-tag:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag] Provisioners:map[puppet-server:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server shell:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell shell-local:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local windows-restart:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart file:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file windows-shell:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell ansible-local:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local puppet-masterless:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless chef-solo:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo powershell:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell ansible:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible salt-masterless:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless chef-client:/usr/local/Cellar/packer/0.10.2/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client]}
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Setting cache directory: /Users/mnishikizawa/.ghq/github.com/mnishikizawa/packer/virtualbox/centos7/packer_cache
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 args: []string{"packer-post-processor-vagrant"}
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Detected home directory from env var: /Users/mnishikizawa
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Plugin minimum port: 10000
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Plugin maximum port: 25000
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Plugin address: unix /var/folders/xf/j94wnxm11r5bvqvy6pm92g2xnt54lk/T/packer-plugin943365218
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Waiting for connection...
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Serving a plugin connection...
+2016/10/24 19:01:48 ui: [1;32mvirtualbox-iso output will be in this color.[0m
+2016/10/24 19:01:48 ui: 
+2016/10/24 19:01:48 Build debug mode: false
+2016/10/24 19:01:48 Force build: false
+2016/10/24 19:01:48 Preparing build: virtualbox-iso
+2016/10/24 19:01:48 Waiting on builds to complete...
+2016/10/24 19:01:48 Starting build run: virtualbox-iso
+2016/10/24 19:01:48 Running builder: virtualbox-iso
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 VBoxManage path: /usr/local/bin/VBoxManage
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 VBoxManage --version output: 5.1.6r110634
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 VirtualBox version: 5.1.6
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Found Default Guest Additions ISO: /Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Guest additions URL: file:///Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso
+2016/10/24 19:01:48 ui: [1;32m==> virtualbox-iso: Downloading or copying Guest additions[0m
+2016/10/24 19:01:48 ui: [0;32m    virtualbox-iso: Downloading or copying: file:///Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso[0m
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Acquiring lock to download: file:///Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Parsed URL: &url.URL{Scheme:"file", Opaque:"", User:(*url.Userinfo)(nil), Host:"", Path:"/Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:""}
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 [DEBUG] Using local file: /Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso
+2016/10/24 19:01:48 ui: [1;32m==> virtualbox-iso: Downloading or copying ISO[0m
+2016/10/24 19:01:48 ui: [0;32m    virtualbox-iso: Downloading or copying: http://ftp.riken.jp/Linux/centos/7.2.1511/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso[0m
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Acquiring lock to download: http://ftp.riken.jp/Linux/centos/7.2.1511/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso
+2016/10/24 19:01:48 packer: 2016/10/24 19:01:48 Verifying checksum of /Users/mnishikizawa/.ghq/github.com/mnishikizawa/packer/virtualbox/centos7/packer_cache/03fbc889021cca22129621171b32185fed1492274239d3e4be3fe05625e142e0.iso
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 [DEBUG] Initial checksum matched, no download needed.
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 No floppy files specified. Floppy disk will not be made.
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 Trying port: 8236
+2016/10/24 19:01:49 ui: [1;32m==> virtualbox-iso: Starting HTTP server on port 8236[0m
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 Suppressing annoying messages in VirtualBox
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 Executing VBoxManage: []string{"setextradata", "global", "GUI/UpdateDate", "1 d, 2017-01-01, stable"}
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 stdout:
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 stderr:
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 Executing VBoxManage: []string{"setextradata", "global", "GUI/RegistrationData", "triesLeft=0"}
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 stdout:
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 stderr:
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 Executing VBoxManage: []string{"setextradata", "global", "GUI/SuppressMessages", "confirmInputCapture,remindAboutAutoCapture,remindAboutMouseIntegrationOff,remindAboutMouseIntegrationOn,remindAboutWrongColorDepth"}
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 stdout:
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 stderr:
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 Executing VBoxManage: []string{"setextradata", "global", "GUI/UpdateCheckCount", "60"}
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 stdout:
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 stderr:
+2016/10/24 19:01:49 ui: [1;32m==> virtualbox-iso: Creating virtual machine...[0m
+2016/10/24 19:01:49 packer: 2016/10/24 19:01:49 Executing VBoxManage: []string{"createvm", "--name", "centos68", "--ostype", "RedHat_64", "--register"}
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stdout: Virtual machine 'centos68' is created and registered.
+2016/10/24 19:01:50 packer: UUID: e5d1c088-1b64-4351-b9f7-8000f4989150
+2016/10/24 19:01:50 packer: Settings file: '/Users/mnishikizawa/VirtualBox VMs/centos68/centos68.vbox'
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stderr:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Executing VBoxManage: []string{"modifyvm", "centos68", "--boot1", "disk", "--boot2", "dvd", "--boot3", "none", "--boot4", "none"}
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stdout:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stderr:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Executing VBoxManage: []string{"modifyvm", "centos68", "--cpus", "1"}
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stdout:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stderr:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Executing VBoxManage: []string{"modifyvm", "centos68", "--memory", "512"}
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stdout:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stderr:
+2016/10/24 19:01:50 ui: [1;32m==> virtualbox-iso: Creating hard drive...[0m
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Executing VBoxManage: []string{"createhd", "--filename", "output/centos68.vdi", "--size", "100000", "--format", "VDI", "--variant", "Standard"}
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stdout: Medium created. UUID: ea7e615c-bfe7-48b6-a2f1-863daf6b2171
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Executing VBoxManage: []string{"storagectl", "centos68", "--name", "IDE Controller", "--add", "ide"}
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stdout:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stderr:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Executing VBoxManage: []string{"storageattach", "centos68", "--storagectl", "IDE Controller", "--port", "0", "--device", "0", "--type", "hdd", "--medium", "output/centos68.vdi"}
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stdout:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stderr:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Executing VBoxManage: []string{"storageattach", "centos68", "--storagectl", "IDE Controller", "--port", "0", "--device", "1", "--type", "dvddrive", "--medium", "/Users/mnishikizawa/.ghq/github.com/mnishikizawa/packer/virtualbox/centos7/packer_cache/03fbc889021cca22129621171b32185fed1492274239d3e4be3fe05625e142e0.iso"}
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stdout:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stderr:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Not attaching guest additions since we're uploading.
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Looking for available port between 5900 and 6000
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Trying port: 5937
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Executing VBoxManage: []string{"modifyvm", "centos68", "--vrdeaddress", "127.0.0.1", "--vrdeauthtype", "null", "--vrde", "on", "--vrdeport", "5937"}
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stdout:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stderr:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 No floppy disk, not attaching.
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Looking for available communicator (SSH, WinRM, etc) port between 2222 and 4444
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Trying port: 2442
+2016/10/24 19:01:50 ui: [1;32m==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 2442)[0m
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Executing VBoxManage: []string{"modifyvm", "centos68", "--natpf1", "packercomm,tcp,127.0.0.1,2442,,22"}
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stdout:
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 stderr:
+2016/10/24 19:01:50 ui: [1;32m==> virtualbox-iso: Starting the virtual machine...[0m
+2016/10/24 19:01:50 packer: 2016/10/24 19:01:50 Executing VBoxManage: []string{"startvm", "centos68", "--type", "gui"}
+2016/10/24 19:01:52 packer: 2016/10/24 19:01:52 stdout: Waiting for VM "centos68" to power on...
+2016/10/24 19:01:52 packer: VM "centos68" has been successfully started.
+2016/10/24 19:01:52 packer: 2016/10/24 19:01:52 stderr:
+2016/10/24 19:01:52 ui: [1;32m==> virtualbox-iso: Waiting 10s for boot...[0m
+2016/10/24 19:02:02 ui: [1;32m==> virtualbox-iso: Typing the boot command...[0m
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Special code '<tab>' found, replacing with: [0f 8f]
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "0f"}
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 stdout:
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 stderr:
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "8f"}
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 stdout:
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 stderr:
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char ' ', code '[39 b9]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'l', code '[26 a6]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'i', code '[17 97]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'n', code '[31 b1]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'u', code '[16 96]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'x', code '[2d ad]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char ' ', code '[39 b9]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'k', code '[25 a5]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 's', code '[1f 9f]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '=', code '[0d 8d]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'h', code '[23 a3]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 't', code '[14 94]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 't', code '[14 94]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'p', code '[19 99]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char ':', code '[2a 27 aa a7]', shift true
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '/', code '[35 b5]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '/', code '[35 b5]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '1', code '[02 82]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '0', code '[0b 8b]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '.', code '[34 b4]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '0', code '[0b 8b]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '.', code '[34 b4]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '2', code '[03 83]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '.', code '[34 b4]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '2', code '[03 83]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char ':', code '[2a 27 aa a7]', shift true
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '8', code '[09 89]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '2', code '[03 83]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '3', code '[04 84]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '6', code '[07 87]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '/', code '[35 b5]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'c', code '[2e ae]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'e', code '[12 92]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'n', code '[31 b1]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 't', code '[14 94]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'o', code '[18 98]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 's', code '[1f 9f]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '7', code '[08 88]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '-', code '[0c 8c]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'k', code '[25 a5]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 's', code '[1f 9f]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char '.', code '[34 b4]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'c', code '[2e ae]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'f', code '[21 a1]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Sending char 'g', code '[22 a2]', shift false
+2016/10/24 19:02:02 packer: 2016/10/24 19:02:02 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "39"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b9"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "26"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "a6"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "17"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "97"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "31"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b1"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "16"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "96"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "2d"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "ad"}
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stdout:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 stderr:
+2016/10/24 19:02:03 packer: 2016/10/24 19:02:03 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "39"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b9"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "25"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "a5"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "1f"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "9f"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "0d"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "8d"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "23"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "a3"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "14"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "94"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "14"}
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stdout:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 stderr:
+2016/10/24 19:02:04 packer: 2016/10/24 19:02:04 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "94"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "19"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "99"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "2a"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "27"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "aa"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "a7"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "35"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b5"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "35"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b5"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "02"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "82"}
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stdout:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 stderr:
+2016/10/24 19:02:05 packer: 2016/10/24 19:02:05 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "0b"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "8b"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "34"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b4"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "0b"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "8b"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "34"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b4"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "03"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "83"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "34"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b4"}
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stdout:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 stderr:
+2016/10/24 19:02:06 packer: 2016/10/24 19:02:06 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "03"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "83"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "2a"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "27"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "aa"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "a7"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "09"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "89"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "03"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "83"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "04"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "84"}
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stdout:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 stderr:
+2016/10/24 19:02:07 packer: 2016/10/24 19:02:07 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "07"}
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stdout:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stderr:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "87"}
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stdout:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stderr:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "35"}
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stdout:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stderr:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b5"}
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stdout:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stderr:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "2e"}
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stdout:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stderr:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "ae"}
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stdout:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stderr:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "12"}
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stdout:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stderr:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "92"}
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stdout:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stderr:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "31"}
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stdout:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stderr:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b1"}
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stdout:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 stderr:
+2016/10/24 19:02:08 packer: 2016/10/24 19:02:08 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "14"}
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stdout:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stderr:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "94"}
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stdout:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stderr:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "18"}
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stdout:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stderr:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "98"}
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stdout:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stderr:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "1f"}
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stdout:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stderr:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "9f"}
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stdout:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stderr:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "08"}
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stdout:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stderr:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "88"}
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stdout:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stderr:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "0c"}
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stdout:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 stderr:
+2016/10/24 19:02:09 packer: 2016/10/24 19:02:09 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "8c"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "25"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "a5"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "1f"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "9f"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "34"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "b4"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "2e"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "ae"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "21"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "a1"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "22"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "a2"}
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stdout:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 stderr:
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Special code '<enter>' found, replacing with: [1c 9c]
+2016/10/24 19:02:10 packer: 2016/10/24 19:02:10 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "1c"}
+2016/10/24 19:02:11 packer: 2016/10/24 19:02:11 stdout:
+2016/10/24 19:02:11 packer: 2016/10/24 19:02:11 stderr:
+2016/10/24 19:02:11 packer: 2016/10/24 19:02:11 Executing VBoxManage: []string{"controlvm", "centos68", "keyboardputscancode", "9c"}
+2016/10/24 19:02:11 packer: 2016/10/24 19:02:11 stdout:
+2016/10/24 19:02:11 packer: 2016/10/24 19:02:11 stderr:
+2016/10/24 19:02:11 packer: 2016/10/24 19:02:11 [INFO] Waiting for SSH, up to timeout: 15h0m0s
+2016/10/24 19:02:11 ui: [1;32m==> virtualbox-iso: Waiting for SSH to become available...[0m
+2016/10/24 19:02:11 packer: 2016/10/24 19:02:11 [INFO] Attempting SSH connection...
+2016/10/24 19:02:11 packer: 2016/10/24 19:02:11 reconnecting to TCP connection for SSH
+2016/10/24 19:02:11 packer: 2016/10/24 19:02:11 handshaking with SSH
+2016/10/24 19:02:30 packer: 2016/10/24 19:02:30 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:02:30 packer: 2016/10/24 19:02:30 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:02:37 packer: 2016/10/24 19:02:37 [INFO] Attempting SSH connection...
+2016/10/24 19:02:37 packer: 2016/10/24 19:02:37 reconnecting to TCP connection for SSH
+2016/10/24 19:02:37 packer: 2016/10/24 19:02:37 handshaking with SSH
+2016/10/24 19:02:37 packer: 2016/10/24 19:02:37 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:02:37 packer: 2016/10/24 19:02:37 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:02:44 packer: 2016/10/24 19:02:44 [INFO] Attempting SSH connection...
+2016/10/24 19:02:44 packer: 2016/10/24 19:02:44 reconnecting to TCP connection for SSH
+2016/10/24 19:02:44 packer: 2016/10/24 19:02:44 handshaking with SSH
+2016/10/24 19:02:44 packer: 2016/10/24 19:02:44 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:02:44 packer: 2016/10/24 19:02:44 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:02:51 packer: 2016/10/24 19:02:51 [INFO] Attempting SSH connection...
+2016/10/24 19:02:51 packer: 2016/10/24 19:02:51 reconnecting to TCP connection for SSH
+2016/10/24 19:02:51 packer: 2016/10/24 19:02:51 handshaking with SSH
+2016/10/24 19:02:51 packer: 2016/10/24 19:02:51 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:02:51 packer: 2016/10/24 19:02:51 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:02:58 packer: 2016/10/24 19:02:58 [INFO] Attempting SSH connection...
+2016/10/24 19:02:58 packer: 2016/10/24 19:02:58 reconnecting to TCP connection for SSH
+2016/10/24 19:02:58 packer: 2016/10/24 19:02:58 handshaking with SSH
+2016/10/24 19:02:58 packer: 2016/10/24 19:02:58 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:02:58 packer: 2016/10/24 19:02:58 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:03:05 packer: 2016/10/24 19:03:05 [INFO] Attempting SSH connection...
+2016/10/24 19:03:05 packer: 2016/10/24 19:03:05 reconnecting to TCP connection for SSH
+2016/10/24 19:03:05 packer: 2016/10/24 19:03:05 handshaking with SSH
+2016/10/24 19:03:05 packer: 2016/10/24 19:03:05 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:03:05 packer: 2016/10/24 19:03:05 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:03:12 packer: 2016/10/24 19:03:12 [INFO] Attempting SSH connection...
+2016/10/24 19:03:12 packer: 2016/10/24 19:03:12 reconnecting to TCP connection for SSH
+2016/10/24 19:03:12 packer: 2016/10/24 19:03:12 handshaking with SSH
+2016/10/24 19:03:12 packer: 2016/10/24 19:03:12 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:03:12 packer: 2016/10/24 19:03:12 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:03:19 packer: 2016/10/24 19:03:19 [INFO] Attempting SSH connection...
+2016/10/24 19:03:19 packer: 2016/10/24 19:03:19 reconnecting to TCP connection for SSH
+2016/10/24 19:03:19 packer: 2016/10/24 19:03:19 handshaking with SSH
+2016/10/24 19:03:19 packer: 2016/10/24 19:03:19 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:03:19 packer: 2016/10/24 19:03:19 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:03:26 packer: 2016/10/24 19:03:26 [INFO] Attempting SSH connection...
+2016/10/24 19:03:26 packer: 2016/10/24 19:03:26 reconnecting to TCP connection for SSH
+2016/10/24 19:03:26 packer: 2016/10/24 19:03:26 handshaking with SSH
+2016/10/24 19:03:26 packer: 2016/10/24 19:03:26 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:03:26 packer: 2016/10/24 19:03:26 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:03:33 packer: 2016/10/24 19:03:33 [INFO] Attempting SSH connection...
+2016/10/24 19:03:33 packer: 2016/10/24 19:03:33 reconnecting to TCP connection for SSH
+2016/10/24 19:03:33 packer: 2016/10/24 19:03:33 handshaking with SSH
+2016/10/24 19:03:33 packer: 2016/10/24 19:03:33 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:03:33 packer: 2016/10/24 19:03:33 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:03:40 packer: 2016/10/24 19:03:40 [INFO] Attempting SSH connection...
+2016/10/24 19:03:40 packer: 2016/10/24 19:03:40 reconnecting to TCP connection for SSH
+2016/10/24 19:03:40 packer: 2016/10/24 19:03:40 handshaking with SSH
+2016/10/24 19:03:40 packer: 2016/10/24 19:03:40 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:03:40 packer: 2016/10/24 19:03:40 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:03:47 packer: 2016/10/24 19:03:47 [INFO] Attempting SSH connection...
+2016/10/24 19:03:47 packer: 2016/10/24 19:03:47 reconnecting to TCP connection for SSH
+2016/10/24 19:03:47 packer: 2016/10/24 19:03:47 handshaking with SSH
+2016/10/24 19:03:47 packer: 2016/10/24 19:03:47 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:03:47 packer: 2016/10/24 19:03:47 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:03:54 packer: 2016/10/24 19:03:54 [INFO] Attempting SSH connection...
+2016/10/24 19:03:54 packer: 2016/10/24 19:03:54 reconnecting to TCP connection for SSH
+2016/10/24 19:03:54 packer: 2016/10/24 19:03:54 handshaking with SSH
+2016/10/24 19:03:54 packer: 2016/10/24 19:03:54 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:03:54 packer: 2016/10/24 19:03:54 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:04:01 packer: 2016/10/24 19:04:01 [INFO] Attempting SSH connection...
+2016/10/24 19:04:01 packer: 2016/10/24 19:04:01 reconnecting to TCP connection for SSH
+2016/10/24 19:04:01 packer: 2016/10/24 19:04:01 handshaking with SSH
+2016/10/24 19:04:01 packer: 2016/10/24 19:04:01 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:04:01 packer: 2016/10/24 19:04:01 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:04:08 packer: 2016/10/24 19:04:08 [INFO] Attempting SSH connection...
+2016/10/24 19:04:08 packer: 2016/10/24 19:04:08 reconnecting to TCP connection for SSH
+2016/10/24 19:04:08 packer: 2016/10/24 19:04:08 handshaking with SSH
+2016/10/24 19:04:08 packer: 2016/10/24 19:04:08 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:04:08 packer: 2016/10/24 19:04:08 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:04:15 packer: 2016/10/24 19:04:15 [INFO] Attempting SSH connection...
+2016/10/24 19:04:15 packer: 2016/10/24 19:04:15 reconnecting to TCP connection for SSH
+2016/10/24 19:04:15 packer: 2016/10/24 19:04:15 handshaking with SSH
+2016/10/24 19:04:15 packer: 2016/10/24 19:04:15 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:04:15 packer: 2016/10/24 19:04:15 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:04:22 packer: 2016/10/24 19:04:22 [INFO] Attempting SSH connection...
+2016/10/24 19:04:22 packer: 2016/10/24 19:04:22 reconnecting to TCP connection for SSH
+2016/10/24 19:04:22 packer: 2016/10/24 19:04:22 handshaking with SSH
+2016/10/24 19:04:22 packer: 2016/10/24 19:04:22 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:04:22 packer: 2016/10/24 19:04:22 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:04:29 packer: 2016/10/24 19:04:29 [INFO] Attempting SSH connection...
+2016/10/24 19:04:29 packer: 2016/10/24 19:04:29 reconnecting to TCP connection for SSH
+2016/10/24 19:04:29 packer: 2016/10/24 19:04:29 handshaking with SSH
+2016/10/24 19:04:29 packer: 2016/10/24 19:04:29 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:04:29 packer: 2016/10/24 19:04:29 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:04:36 packer: 2016/10/24 19:04:36 [INFO] Attempting SSH connection...
+2016/10/24 19:04:36 packer: 2016/10/24 19:04:36 reconnecting to TCP connection for SSH
+2016/10/24 19:04:36 packer: 2016/10/24 19:04:36 handshaking with SSH
+2016/10/24 19:04:36 packer: 2016/10/24 19:04:36 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:04:36 packer: 2016/10/24 19:04:36 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:04:43 packer: 2016/10/24 19:04:43 [INFO] Attempting SSH connection...
+2016/10/24 19:04:43 packer: 2016/10/24 19:04:43 reconnecting to TCP connection for SSH
+2016/10/24 19:04:44 packer: 2016/10/24 19:04:44 handshaking with SSH
+2016/10/24 19:04:44 packer: 2016/10/24 19:04:44 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:04:44 packer: 2016/10/24 19:04:44 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:04:51 packer: 2016/10/24 19:04:51 [INFO] Attempting SSH connection...
+2016/10/24 19:04:51 packer: 2016/10/24 19:04:51 reconnecting to TCP connection for SSH
+2016/10/24 19:04:51 packer: 2016/10/24 19:04:51 handshaking with SSH
+2016/10/24 19:04:51 packer: 2016/10/24 19:04:51 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:04:51 packer: 2016/10/24 19:04:51 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:04:58 packer: 2016/10/24 19:04:58 [INFO] Attempting SSH connection...
+2016/10/24 19:04:58 packer: 2016/10/24 19:04:58 reconnecting to TCP connection for SSH
+2016/10/24 19:04:58 packer: 2016/10/24 19:04:58 handshaking with SSH
+2016/10/24 19:04:58 packer: 2016/10/24 19:04:58 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:04:58 packer: 2016/10/24 19:04:58 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:05:05 packer: 2016/10/24 19:05:05 [INFO] Attempting SSH connection...
+2016/10/24 19:05:05 packer: 2016/10/24 19:05:05 reconnecting to TCP connection for SSH
+2016/10/24 19:05:05 packer: 2016/10/24 19:05:05 handshaking with SSH
+2016/10/24 19:05:05 packer: 2016/10/24 19:05:05 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:05:05 packer: 2016/10/24 19:05:05 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:05:12 packer: 2016/10/24 19:05:12 [INFO] Attempting SSH connection...
+2016/10/24 19:05:12 packer: 2016/10/24 19:05:12 reconnecting to TCP connection for SSH
+2016/10/24 19:05:12 packer: 2016/10/24 19:05:12 handshaking with SSH
+2016/10/24 19:05:12 packer: 2016/10/24 19:05:12 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:05:12 packer: 2016/10/24 19:05:12 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:05:19 packer: 2016/10/24 19:05:19 [INFO] Attempting SSH connection...
+2016/10/24 19:05:19 packer: 2016/10/24 19:05:19 reconnecting to TCP connection for SSH
+2016/10/24 19:05:19 packer: 2016/10/24 19:05:19 handshaking with SSH
+2016/10/24 19:05:19 packer: 2016/10/24 19:05:19 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:05:19 packer: 2016/10/24 19:05:19 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:05:26 packer: 2016/10/24 19:05:26 [INFO] Attempting SSH connection...
+2016/10/24 19:05:26 packer: 2016/10/24 19:05:26 reconnecting to TCP connection for SSH
+2016/10/24 19:05:26 packer: 2016/10/24 19:05:26 handshaking with SSH
+2016/10/24 19:05:26 packer: 2016/10/24 19:05:26 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:05:26 packer: 2016/10/24 19:05:26 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:05:33 packer: 2016/10/24 19:05:33 [INFO] Attempting SSH connection...
+2016/10/24 19:05:33 packer: 2016/10/24 19:05:33 reconnecting to TCP connection for SSH
+2016/10/24 19:05:33 packer: 2016/10/24 19:05:33 handshaking with SSH
+2016/10/24 19:05:33 packer: 2016/10/24 19:05:33 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:05:33 packer: 2016/10/24 19:05:33 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:05:40 packer: 2016/10/24 19:05:40 [INFO] Attempting SSH connection...
+2016/10/24 19:05:40 packer: 2016/10/24 19:05:40 reconnecting to TCP connection for SSH
+2016/10/24 19:05:40 packer: 2016/10/24 19:05:40 handshaking with SSH
+2016/10/24 19:05:40 packer: 2016/10/24 19:05:40 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:05:40 packer: 2016/10/24 19:05:40 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:05:47 packer: 2016/10/24 19:05:47 [INFO] Attempting SSH connection...
+2016/10/24 19:05:47 packer: 2016/10/24 19:05:47 reconnecting to TCP connection for SSH
+2016/10/24 19:05:47 packer: 2016/10/24 19:05:47 handshaking with SSH
+2016/10/24 19:05:47 packer: 2016/10/24 19:05:47 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:05:47 packer: 2016/10/24 19:05:47 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:05:54 packer: 2016/10/24 19:05:54 [INFO] Attempting SSH connection...
+2016/10/24 19:05:54 packer: 2016/10/24 19:05:54 reconnecting to TCP connection for SSH
+2016/10/24 19:05:54 packer: 2016/10/24 19:05:54 handshaking with SSH
+2016/10/24 19:05:54 packer: 2016/10/24 19:05:54 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:05:54 packer: 2016/10/24 19:05:54 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:06:01 packer: 2016/10/24 19:06:01 [INFO] Attempting SSH connection...
+2016/10/24 19:06:01 packer: 2016/10/24 19:06:01 reconnecting to TCP connection for SSH
+2016/10/24 19:06:01 packer: 2016/10/24 19:06:01 handshaking with SSH
+2016/10/24 19:06:01 packer: 2016/10/24 19:06:01 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:06:01 packer: 2016/10/24 19:06:01 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:06:08 packer: 2016/10/24 19:06:08 [INFO] Attempting SSH connection...
+2016/10/24 19:06:08 packer: 2016/10/24 19:06:08 reconnecting to TCP connection for SSH
+2016/10/24 19:06:08 packer: 2016/10/24 19:06:08 handshaking with SSH
+2016/10/24 19:06:08 packer: 2016/10/24 19:06:08 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:06:08 packer: 2016/10/24 19:06:08 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:06:15 packer: 2016/10/24 19:06:15 [INFO] Attempting SSH connection...
+2016/10/24 19:06:15 packer: 2016/10/24 19:06:15 reconnecting to TCP connection for SSH
+2016/10/24 19:06:15 packer: 2016/10/24 19:06:15 handshaking with SSH
+2016/10/24 19:06:15 packer: 2016/10/24 19:06:15 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:06:15 packer: 2016/10/24 19:06:15 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:06:22 packer: 2016/10/24 19:06:22 [INFO] Attempting SSH connection...
+2016/10/24 19:06:22 packer: 2016/10/24 19:06:22 reconnecting to TCP connection for SSH
+2016/10/24 19:06:22 packer: 2016/10/24 19:06:22 handshaking with SSH
+2016/10/24 19:06:22 packer: 2016/10/24 19:06:22 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:06:22 packer: 2016/10/24 19:06:22 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:06:29 packer: 2016/10/24 19:06:29 [INFO] Attempting SSH connection...
+2016/10/24 19:06:29 packer: 2016/10/24 19:06:29 reconnecting to TCP connection for SSH
+2016/10/24 19:06:29 packer: 2016/10/24 19:06:29 handshaking with SSH
+2016/10/24 19:06:29 packer: 2016/10/24 19:06:29 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:06:29 packer: 2016/10/24 19:06:29 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:06:36 packer: 2016/10/24 19:06:36 [INFO] Attempting SSH connection...
+2016/10/24 19:06:36 packer: 2016/10/24 19:06:36 reconnecting to TCP connection for SSH
+2016/10/24 19:06:36 packer: 2016/10/24 19:06:36 handshaking with SSH
+2016/10/24 19:06:36 packer: 2016/10/24 19:06:36 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:06:36 packer: 2016/10/24 19:06:36 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:06:43 packer: 2016/10/24 19:06:43 [INFO] Attempting SSH connection...
+2016/10/24 19:06:43 packer: 2016/10/24 19:06:43 reconnecting to TCP connection for SSH
+2016/10/24 19:06:43 packer: 2016/10/24 19:06:43 handshaking with SSH
+2016/10/24 19:06:43 packer: 2016/10/24 19:06:43 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:06:43 packer: 2016/10/24 19:06:43 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:06:50 packer: 2016/10/24 19:06:50 [INFO] Attempting SSH connection...
+2016/10/24 19:06:50 packer: 2016/10/24 19:06:50 reconnecting to TCP connection for SSH
+2016/10/24 19:06:50 packer: 2016/10/24 19:06:50 handshaking with SSH
+2016/10/24 19:06:50 packer: 2016/10/24 19:06:50 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:06:50 packer: 2016/10/24 19:06:50 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:06:57 packer: 2016/10/24 19:06:57 [INFO] Attempting SSH connection...
+2016/10/24 19:06:57 packer: 2016/10/24 19:06:57 reconnecting to TCP connection for SSH
+2016/10/24 19:06:57 packer: 2016/10/24 19:06:57 handshaking with SSH
+2016/10/24 19:06:57 packer: 2016/10/24 19:06:57 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:06:57 packer: 2016/10/24 19:06:57 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:07:04 packer: 2016/10/24 19:07:04 [INFO] Attempting SSH connection...
+2016/10/24 19:07:04 packer: 2016/10/24 19:07:04 reconnecting to TCP connection for SSH
+2016/10/24 19:07:04 packer: 2016/10/24 19:07:04 handshaking with SSH
+2016/10/24 19:07:04 packer: 2016/10/24 19:07:04 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:07:04 packer: 2016/10/24 19:07:04 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:07:11 packer: 2016/10/24 19:07:11 [INFO] Attempting SSH connection...
+2016/10/24 19:07:11 packer: 2016/10/24 19:07:11 reconnecting to TCP connection for SSH
+2016/10/24 19:07:11 packer: 2016/10/24 19:07:11 handshaking with SSH
+2016/10/24 19:07:11 packer: 2016/10/24 19:07:11 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:07:11 packer: 2016/10/24 19:07:11 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:07:18 packer: 2016/10/24 19:07:18 [INFO] Attempting SSH connection...
+2016/10/24 19:07:18 packer: 2016/10/24 19:07:18 reconnecting to TCP connection for SSH
+2016/10/24 19:07:18 packer: 2016/10/24 19:07:18 handshaking with SSH
+2016/10/24 19:07:18 packer: 2016/10/24 19:07:18 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:07:18 packer: 2016/10/24 19:07:18 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:07:25 packer: 2016/10/24 19:07:25 [INFO] Attempting SSH connection...
+2016/10/24 19:07:25 packer: 2016/10/24 19:07:25 reconnecting to TCP connection for SSH
+2016/10/24 19:07:25 packer: 2016/10/24 19:07:25 handshaking with SSH
+2016/10/24 19:07:25 packer: 2016/10/24 19:07:25 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:07:25 packer: 2016/10/24 19:07:25 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:07:32 packer: 2016/10/24 19:07:32 [INFO] Attempting SSH connection...
+2016/10/24 19:07:32 packer: 2016/10/24 19:07:32 reconnecting to TCP connection for SSH
+2016/10/24 19:07:32 packer: 2016/10/24 19:07:32 handshaking with SSH
+2016/10/24 19:07:32 packer: 2016/10/24 19:07:32 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:07:32 packer: 2016/10/24 19:07:32 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:07:39 packer: 2016/10/24 19:07:39 [INFO] Attempting SSH connection...
+2016/10/24 19:07:39 packer: 2016/10/24 19:07:39 reconnecting to TCP connection for SSH
+2016/10/24 19:07:39 packer: 2016/10/24 19:07:39 handshaking with SSH
+2016/10/24 19:07:39 packer: 2016/10/24 19:07:39 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:07:39 packer: 2016/10/24 19:07:39 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:07:46 packer: 2016/10/24 19:07:46 [INFO] Attempting SSH connection...
+2016/10/24 19:07:46 packer: 2016/10/24 19:07:46 reconnecting to TCP connection for SSH
+2016/10/24 19:07:46 packer: 2016/10/24 19:07:46 handshaking with SSH
+2016/10/24 19:07:46 packer: 2016/10/24 19:07:46 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:07:46 packer: 2016/10/24 19:07:46 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:07:53 packer: 2016/10/24 19:07:53 [INFO] Attempting SSH connection...
+2016/10/24 19:07:53 packer: 2016/10/24 19:07:53 reconnecting to TCP connection for SSH
+2016/10/24 19:07:53 packer: 2016/10/24 19:07:53 handshaking with SSH
+2016/10/24 19:07:53 packer: 2016/10/24 19:07:53 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:07:53 packer: 2016/10/24 19:07:53 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:08:00 packer: 2016/10/24 19:08:00 [INFO] Attempting SSH connection...
+2016/10/24 19:08:00 packer: 2016/10/24 19:08:00 reconnecting to TCP connection for SSH
+2016/10/24 19:08:00 packer: 2016/10/24 19:08:00 handshaking with SSH
+2016/10/24 19:08:00 packer: 2016/10/24 19:08:00 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:08:00 packer: 2016/10/24 19:08:00 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:08:07 packer: 2016/10/24 19:08:07 [INFO] Attempting SSH connection...
+2016/10/24 19:08:07 packer: 2016/10/24 19:08:07 reconnecting to TCP connection for SSH
+2016/10/24 19:08:07 packer: 2016/10/24 19:08:07 handshaking with SSH
+2016/10/24 19:08:07 packer: 2016/10/24 19:08:07 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:08:07 packer: 2016/10/24 19:08:07 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:08:15 packer: 2016/10/24 19:08:15 [INFO] Attempting SSH connection...
+2016/10/24 19:08:15 packer: 2016/10/24 19:08:15 reconnecting to TCP connection for SSH
+2016/10/24 19:08:15 packer: 2016/10/24 19:08:15 handshaking with SSH
+2016/10/24 19:08:15 packer: 2016/10/24 19:08:15 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:08:15 packer: 2016/10/24 19:08:15 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:08:22 packer: 2016/10/24 19:08:22 [INFO] Attempting SSH connection...
+2016/10/24 19:08:22 packer: 2016/10/24 19:08:22 reconnecting to TCP connection for SSH
+2016/10/24 19:08:22 packer: 2016/10/24 19:08:22 handshaking with SSH
+2016/10/24 19:08:22 packer: 2016/10/24 19:08:22 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:08:22 packer: 2016/10/24 19:08:22 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:08:29 packer: 2016/10/24 19:08:29 [INFO] Attempting SSH connection...
+2016/10/24 19:08:29 packer: 2016/10/24 19:08:29 reconnecting to TCP connection for SSH
+2016/10/24 19:08:29 packer: 2016/10/24 19:08:29 handshaking with SSH
+2016/10/24 19:08:29 packer: 2016/10/24 19:08:29 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:08:29 packer: 2016/10/24 19:08:29 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:08:36 packer: 2016/10/24 19:08:36 [INFO] Attempting SSH connection...
+2016/10/24 19:08:36 packer: 2016/10/24 19:08:36 reconnecting to TCP connection for SSH
+2016/10/24 19:08:36 packer: 2016/10/24 19:08:36 handshaking with SSH
+2016/10/24 19:08:36 packer: 2016/10/24 19:08:36 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:08:36 packer: 2016/10/24 19:08:36 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:08:43 packer: 2016/10/24 19:08:43 [INFO] Attempting SSH connection...
+2016/10/24 19:08:43 packer: 2016/10/24 19:08:43 reconnecting to TCP connection for SSH
+2016/10/24 19:08:43 packer: 2016/10/24 19:08:43 handshaking with SSH
+2016/10/24 19:08:43 packer: 2016/10/24 19:08:43 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:08:43 packer: 2016/10/24 19:08:43 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:08:50 packer: 2016/10/24 19:08:50 [INFO] Attempting SSH connection...
+2016/10/24 19:08:50 packer: 2016/10/24 19:08:50 reconnecting to TCP connection for SSH
+2016/10/24 19:08:50 packer: 2016/10/24 19:08:50 handshaking with SSH
+2016/10/24 19:08:50 packer: 2016/10/24 19:08:50 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:08:50 packer: 2016/10/24 19:08:50 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:08:57 packer: 2016/10/24 19:08:57 [INFO] Attempting SSH connection...
+2016/10/24 19:08:57 packer: 2016/10/24 19:08:57 reconnecting to TCP connection for SSH
+2016/10/24 19:08:57 packer: 2016/10/24 19:08:57 handshaking with SSH
+2016/10/24 19:08:57 packer: 2016/10/24 19:08:57 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:08:57 packer: 2016/10/24 19:08:57 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:09:04 packer: 2016/10/24 19:09:04 [INFO] Attempting SSH connection...
+2016/10/24 19:09:04 packer: 2016/10/24 19:09:04 reconnecting to TCP connection for SSH
+2016/10/24 19:09:04 packer: 2016/10/24 19:09:04 handshaking with SSH
+2016/10/24 19:09:04 packer: 2016/10/24 19:09:04 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:09:04 packer: 2016/10/24 19:09:04 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:09:11 packer: 2016/10/24 19:09:11 [INFO] Attempting SSH connection...
+2016/10/24 19:09:11 packer: 2016/10/24 19:09:11 reconnecting to TCP connection for SSH
+2016/10/24 19:09:11 packer: 2016/10/24 19:09:11 handshaking with SSH
+2016/10/24 19:09:11 packer: 2016/10/24 19:09:11 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:09:11 packer: 2016/10/24 19:09:11 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:09:18 packer: 2016/10/24 19:09:18 [INFO] Attempting SSH connection...
+2016/10/24 19:09:18 packer: 2016/10/24 19:09:18 reconnecting to TCP connection for SSH
+2016/10/24 19:09:18 packer: 2016/10/24 19:09:18 handshaking with SSH
+2016/10/24 19:09:18 packer: 2016/10/24 19:09:18 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:09:18 packer: 2016/10/24 19:09:18 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:09:25 packer: 2016/10/24 19:09:25 [INFO] Attempting SSH connection...
+2016/10/24 19:09:25 packer: 2016/10/24 19:09:25 reconnecting to TCP connection for SSH
+2016/10/24 19:09:25 packer: 2016/10/24 19:09:25 handshaking with SSH
+2016/10/24 19:09:25 packer: 2016/10/24 19:09:25 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:09:25 packer: 2016/10/24 19:09:25 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:09:32 packer: 2016/10/24 19:09:32 [INFO] Attempting SSH connection...
+2016/10/24 19:09:32 packer: 2016/10/24 19:09:32 reconnecting to TCP connection for SSH
+2016/10/24 19:09:32 packer: 2016/10/24 19:09:32 handshaking with SSH
+2016/10/24 19:09:32 packer: 2016/10/24 19:09:32 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:09:32 packer: 2016/10/24 19:09:32 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:09:39 packer: 2016/10/24 19:09:39 [INFO] Attempting SSH connection...
+2016/10/24 19:09:39 packer: 2016/10/24 19:09:39 reconnecting to TCP connection for SSH
+2016/10/24 19:09:39 packer: 2016/10/24 19:09:39 handshaking with SSH
+2016/10/24 19:09:39 packer: 2016/10/24 19:09:39 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:09:39 packer: 2016/10/24 19:09:39 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:09:46 packer: 2016/10/24 19:09:46 [INFO] Attempting SSH connection...
+2016/10/24 19:09:46 packer: 2016/10/24 19:09:46 reconnecting to TCP connection for SSH
+2016/10/24 19:09:46 packer: 2016/10/24 19:09:46 handshaking with SSH
+2016/10/24 19:09:46 packer: 2016/10/24 19:09:46 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:09:46 packer: 2016/10/24 19:09:46 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:09:53 packer: 2016/10/24 19:09:53 [INFO] Attempting SSH connection...
+2016/10/24 19:09:53 packer: 2016/10/24 19:09:53 reconnecting to TCP connection for SSH
+2016/10/24 19:09:53 packer: 2016/10/24 19:09:53 handshaking with SSH
+2016/10/24 19:09:53 packer: 2016/10/24 19:09:53 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:09:53 packer: 2016/10/24 19:09:53 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:10:00 packer: 2016/10/24 19:10:00 [INFO] Attempting SSH connection...
+2016/10/24 19:10:00 packer: 2016/10/24 19:10:00 reconnecting to TCP connection for SSH
+2016/10/24 19:10:00 packer: 2016/10/24 19:10:00 handshaking with SSH
+2016/10/24 19:10:00 packer: 2016/10/24 19:10:00 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:10:00 packer: 2016/10/24 19:10:00 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:10:07 packer: 2016/10/24 19:10:07 [INFO] Attempting SSH connection...
+2016/10/24 19:10:07 packer: 2016/10/24 19:10:07 reconnecting to TCP connection for SSH
+2016/10/24 19:10:07 packer: 2016/10/24 19:10:07 handshaking with SSH
+2016/10/24 19:10:07 packer: 2016/10/24 19:10:07 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:10:07 packer: 2016/10/24 19:10:07 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:10:14 packer: 2016/10/24 19:10:14 [INFO] Attempting SSH connection...
+2016/10/24 19:10:14 packer: 2016/10/24 19:10:14 reconnecting to TCP connection for SSH
+2016/10/24 19:10:14 packer: 2016/10/24 19:10:14 handshaking with SSH
+2016/10/24 19:10:14 packer: 2016/10/24 19:10:14 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:10:14 packer: 2016/10/24 19:10:14 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:10:21 packer: 2016/10/24 19:10:21 [INFO] Attempting SSH connection...
+2016/10/24 19:10:21 packer: 2016/10/24 19:10:21 reconnecting to TCP connection for SSH
+2016/10/24 19:10:21 packer: 2016/10/24 19:10:21 handshaking with SSH
+2016/10/24 19:10:21 packer: 2016/10/24 19:10:21 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:10:21 packer: 2016/10/24 19:10:21 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:10:28 packer: 2016/10/24 19:10:28 [INFO] Attempting SSH connection...
+2016/10/24 19:10:28 packer: 2016/10/24 19:10:28 reconnecting to TCP connection for SSH
+2016/10/24 19:10:28 packer: 2016/10/24 19:10:28 handshaking with SSH
+2016/10/24 19:10:28 packer: 2016/10/24 19:10:28 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:10:28 packer: 2016/10/24 19:10:28 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:10:35 packer: 2016/10/24 19:10:35 [INFO] Attempting SSH connection...
+2016/10/24 19:10:35 packer: 2016/10/24 19:10:35 reconnecting to TCP connection for SSH
+2016/10/24 19:10:35 packer: 2016/10/24 19:10:35 handshaking with SSH
+2016/10/24 19:10:35 packer: 2016/10/24 19:10:35 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:10:35 packer: 2016/10/24 19:10:35 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:10:42 packer: 2016/10/24 19:10:42 [INFO] Attempting SSH connection...
+2016/10/24 19:10:42 packer: 2016/10/24 19:10:42 reconnecting to TCP connection for SSH
+2016/10/24 19:10:42 packer: 2016/10/24 19:10:42 handshaking with SSH
+2016/10/24 19:10:42 packer: 2016/10/24 19:10:42 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:10:42 packer: 2016/10/24 19:10:42 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:10:49 packer: 2016/10/24 19:10:49 [INFO] Attempting SSH connection...
+2016/10/24 19:10:49 packer: 2016/10/24 19:10:49 reconnecting to TCP connection for SSH
+2016/10/24 19:10:49 packer: 2016/10/24 19:10:49 handshaking with SSH
+2016/10/24 19:10:49 packer: 2016/10/24 19:10:49 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:10:49 packer: 2016/10/24 19:10:49 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:10:56 packer: 2016/10/24 19:10:56 [INFO] Attempting SSH connection...
+2016/10/24 19:10:56 packer: 2016/10/24 19:10:56 reconnecting to TCP connection for SSH
+2016/10/24 19:10:56 packer: 2016/10/24 19:10:56 handshaking with SSH
+2016/10/24 19:10:56 packer: 2016/10/24 19:10:56 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:10:56 packer: 2016/10/24 19:10:56 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:11:03 packer: 2016/10/24 19:11:03 [INFO] Attempting SSH connection...
+2016/10/24 19:11:03 packer: 2016/10/24 19:11:03 reconnecting to TCP connection for SSH
+2016/10/24 19:11:03 packer: 2016/10/24 19:11:03 handshaking with SSH
+2016/10/24 19:11:03 packer: 2016/10/24 19:11:03 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:11:03 packer: 2016/10/24 19:11:03 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:11:10 packer: 2016/10/24 19:11:10 [INFO] Attempting SSH connection...
+2016/10/24 19:11:10 packer: 2016/10/24 19:11:10 reconnecting to TCP connection for SSH
+2016/10/24 19:11:10 packer: 2016/10/24 19:11:10 handshaking with SSH
+2016/10/24 19:11:10 packer: 2016/10/24 19:11:10 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:11:10 packer: 2016/10/24 19:11:10 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:11:17 packer: 2016/10/24 19:11:17 [INFO] Attempting SSH connection...
+2016/10/24 19:11:17 packer: 2016/10/24 19:11:17 reconnecting to TCP connection for SSH
+2016/10/24 19:11:17 packer: 2016/10/24 19:11:17 handshaking with SSH
+2016/10/24 19:11:17 packer: 2016/10/24 19:11:17 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:11:17 packer: 2016/10/24 19:11:17 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:11:24 packer: 2016/10/24 19:11:24 [INFO] Attempting SSH connection...
+2016/10/24 19:11:24 packer: 2016/10/24 19:11:24 reconnecting to TCP connection for SSH
+2016/10/24 19:11:24 packer: 2016/10/24 19:11:24 handshaking with SSH
+2016/10/24 19:11:24 packer: 2016/10/24 19:11:24 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:11:24 packer: 2016/10/24 19:11:24 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:11:31 packer: 2016/10/24 19:11:31 [INFO] Attempting SSH connection...
+2016/10/24 19:11:31 packer: 2016/10/24 19:11:31 reconnecting to TCP connection for SSH
+2016/10/24 19:11:31 packer: 2016/10/24 19:11:31 handshaking with SSH
+2016/10/24 19:11:31 packer: 2016/10/24 19:11:31 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:11:31 packer: 2016/10/24 19:11:31 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:11:39 packer: 2016/10/24 19:11:39 [INFO] Attempting SSH connection...
+2016/10/24 19:11:39 packer: 2016/10/24 19:11:39 reconnecting to TCP connection for SSH
+2016/10/24 19:11:39 packer: 2016/10/24 19:11:39 handshaking with SSH
+2016/10/24 19:11:39 packer: 2016/10/24 19:11:39 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:11:39 packer: 2016/10/24 19:11:39 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:11:46 packer: 2016/10/24 19:11:46 [INFO] Attempting SSH connection...
+2016/10/24 19:11:46 packer: 2016/10/24 19:11:46 reconnecting to TCP connection for SSH
+2016/10/24 19:11:46 packer: 2016/10/24 19:11:46 handshaking with SSH
+2016/10/24 19:11:46 packer: 2016/10/24 19:11:46 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:11:46 packer: 2016/10/24 19:11:46 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:11:53 packer: 2016/10/24 19:11:53 [INFO] Attempting SSH connection...
+2016/10/24 19:11:53 packer: 2016/10/24 19:11:53 reconnecting to TCP connection for SSH
+2016/10/24 19:11:53 packer: 2016/10/24 19:11:53 handshaking with SSH
+2016/10/24 19:11:53 packer: 2016/10/24 19:11:53 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:11:53 packer: 2016/10/24 19:11:53 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:12:00 packer: 2016/10/24 19:12:00 [INFO] Attempting SSH connection...
+2016/10/24 19:12:00 packer: 2016/10/24 19:12:00 reconnecting to TCP connection for SSH
+2016/10/24 19:12:00 packer: 2016/10/24 19:12:00 handshaking with SSH
+2016/10/24 19:12:00 packer: 2016/10/24 19:12:00 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:12:00 packer: 2016/10/24 19:12:00 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:12:07 packer: 2016/10/24 19:12:07 [INFO] Attempting SSH connection...
+2016/10/24 19:12:07 packer: 2016/10/24 19:12:07 reconnecting to TCP connection for SSH
+2016/10/24 19:12:07 packer: 2016/10/24 19:12:07 handshaking with SSH
+2016/10/24 19:12:07 packer: 2016/10/24 19:12:07 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:12:07 packer: 2016/10/24 19:12:07 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:12:14 packer: 2016/10/24 19:12:14 [INFO] Attempting SSH connection...
+2016/10/24 19:12:14 packer: 2016/10/24 19:12:14 reconnecting to TCP connection for SSH
+2016/10/24 19:12:14 packer: 2016/10/24 19:12:14 handshaking with SSH
+2016/10/24 19:12:14 packer: 2016/10/24 19:12:14 handshake error: ssh: handshake failed: EOF
+2016/10/24 19:12:14 packer: 2016/10/24 19:12:14 [DEBUG] SSH handshake err: ssh: handshake failed: EOF
+2016/10/24 19:12:21 packer: 2016/10/24 19:12:21 [INFO] Attempting SSH connection...
+2016/10/24 19:12:21 packer: 2016/10/24 19:12:21 reconnecting to TCP connection for SSH
+2016/10/24 19:12:21 packer: 2016/10/24 19:12:21 handshaking with SSH
+2016/10/24 19:12:51 packer: 2016/10/24 19:12:51 handshake complete!
+2016/10/24 19:12:51 packer: 2016/10/24 19:12:51 opening new ssh session
+2016/10/24 19:12:51 packer: 2016/10/24 19:12:51 [INFO] agent forwarding enabled
+2016/10/24 19:12:51 ui: [1;32m==> virtualbox-iso: Connected to SSH![0m
+2016/10/24 19:12:51 packer: 2016/10/24 19:12:51 VBoxManage --version output: 5.1.6r110634
+2016/10/24 19:12:51 packer: 2016/10/24 19:12:51 VirtualBox version: 5.1.6
+2016/10/24 19:12:51 ui: [1;32m==> virtualbox-iso: Uploading VirtualBox version info (5.1.6)[0m
+2016/10/24 19:12:51 packer: 2016/10/24 19:12:51 opening new ssh session
+2016/10/24 19:12:51 packer: 2016/10/24 19:12:51 Starting remote scp process:  scp -vt .
+2016/10/24 19:12:51 packer: 2016/10/24 19:12:51 Started SCP session, beginning transfers...
+2016/10/24 19:12:51 packer: 2016/10/24 19:12:51 Copying input data into temporary file so we can read the length
+2016/10/24 19:12:51 packer: 2016/10/24 19:12:51 [DEBUG] scp: Uploading .vbox_version: perms=C0644 size=5
+2016/10/24 19:12:52 packer: 2016/10/24 19:12:52 SCP session complete, closing stdin pipe.
+2016/10/24 19:12:52 packer: 2016/10/24 19:12:52 Waiting for SSH session to complete.
+2016/10/24 19:12:52 packer: 2016/10/24 19:12:52 scp stderr (length 28): Sink: C0644 5 .vbox_version
+2016/10/24 19:12:52 packer: 2016/10/24 19:12:52 VBoxManage --version output: 5.1.6r110634
+2016/10/24 19:12:52 packer: 2016/10/24 19:12:52 VirtualBox version: 5.1.6
+2016/10/24 19:12:52 ui: [1;32m==> virtualbox-iso: Uploading VirtualBox guest additions ISO...[0m
+2016/10/24 19:12:52 packer: 2016/10/24 19:12:52 opening new ssh session
+2016/10/24 19:12:52 packer: 2016/10/24 19:12:52 Starting remote scp process:  scp -vt .
+2016/10/24 19:12:52 packer: 2016/10/24 19:12:52 Started SCP session, beginning transfers...
+2016/10/24 19:12:52 packer: 2016/10/24 19:12:52 Copying input data into temporary file so we can read the length
+2016/10/24 19:12:52 packer: 2016/10/24 19:12:52 [DEBUG] scp: Uploading VBoxGuestAdditions.iso: perms=C0644 size=59258880
+2016/10/24 19:12:55 packer: 2016/10/24 19:12:55 SCP session complete, closing stdin pipe.
+2016/10/24 19:12:55 packer: 2016/10/24 19:12:55 Waiting for SSH session to complete.
+2016/10/24 19:12:55 packer: 2016/10/24 19:12:55 scp stderr (length 44): Sink: C0644 59258880 VBoxGuestAdditions.iso
+2016/10/24 19:12:55 packer: 2016/10/24 19:12:55 Running the provision hook
+2016/10/24 19:12:55 ui: [1;32m==> virtualbox-iso: Gracefully halting virtual machine...[0m
+2016/10/24 19:12:55 packer: 2016/10/24 19:12:55 Executing shutdown command: sudo /sbin/poweroff
+2016/10/24 19:12:55 packer: 2016/10/24 19:12:55 opening new ssh session
+2016/10/24 19:12:55 packer: 2016/10/24 19:12:55 starting remote command: sudo /sbin/poweroff
+2016/10/24 19:12:56 packer: 2016/10/24 19:12:56 remote command exited with '0': sudo /sbin/poweroff
+2016/10/24 19:12:56 packer: 2016/10/24 19:12:56 Waiting max 5m0s for shutdown to complete
+2016/10/24 19:12:58 packer: 2016/10/24 19:12:58 VM shut down.
+2016/10/24 19:12:58 packer: 2016/10/24 19:12:58 Executing VBoxManage: []string{"storageattach", "centos68", "--storagectl", "IDE Controller", "--port", "0", "--device", "1", "--medium", "none"}
+2016/10/24 19:12:58 packer: 2016/10/24 19:12:58 stdout:
+2016/10/24 19:12:58 packer: 2016/10/24 19:12:58 stderr:
+2016/10/24 19:12:58 packer: 2016/10/24 19:12:58 1 second timeout to ensure VM is really shutdown
+2016/10/24 19:12:59 ui: [1;32m==> virtualbox-iso: Preparing to export machine...[0m
+2016/10/24 19:12:59 ui: [0;32m    virtualbox-iso: Deleting forwarded port mapping for the communicator (SSH, WinRM, etc) (host port 2442)[0m
+2016/10/24 19:12:59 packer: 2016/10/24 19:12:59 Executing VBoxManage: []string{"modifyvm", "centos68", "--natpf1", "delete", "packercomm"}
+2016/10/24 19:12:59 packer: 2016/10/24 19:12:59 stdout:
+2016/10/24 19:12:59 packer: 2016/10/24 19:12:59 stderr:
+2016/10/24 19:12:59 ui: [1;32m==> virtualbox-iso: Exporting virtual machine...[0m
+2016/10/24 19:12:59 ui: [0;32m    virtualbox-iso: Executing: export centos68 --output output/centos68.ovf[0m
+2016/10/24 19:12:59 packer: 2016/10/24 19:12:59 Executing VBoxManage: []string{"export", "centos68", "--output", "output/centos68.ovf"}
+2016/10/24 19:14:12 packer: 2016/10/24 19:14:12 stdout: Successfully exported 1 machine(s).
+2016/10/24 19:14:12 packer: 2016/10/24 19:14:12 stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+2016/10/24 19:14:12 packer: 2016/10/24 19:14:12 Executing VBoxManage: []string{"storageattach", "centos68", "--storagectl", "IDE Controller", "--port", "0", "--device", "1", "--medium", "none"}
+2016/10/24 19:14:12 packer: 2016/10/24 19:14:12 stdout:
+2016/10/24 19:14:12 packer: 2016/10/24 19:14:12 stderr: VBoxManage: error: No storage device attached to device slot 1 on port 0 of controller 'IDE Controller'
+2016/10/24 19:14:12 packer: VBoxManage: error: Details: code VBOX_E_OBJECT_NOT_FOUND (0x80bb0001), component SessionMachine, interface IMachine, callee nsISupports
+2016/10/24 19:14:12 packer: VBoxManage: error: Context: "DetachDevice(Bstr(pszCtl).raw(), port, device)" at line 393 of file VBoxManageStorageController.cpp
+2016/10/24 19:14:12 ui: [1;32m==> virtualbox-iso: Unregistering and deleting virtual machine...[0m
+2016/10/24 19:14:12 packer: 2016/10/24 19:14:12 Executing VBoxManage: []string{"unregistervm", "centos68", "--delete"}
+2016/10/24 19:14:12 packer: 2016/10/24 19:14:12 stdout:
+2016/10/24 19:14:12 packer: 2016/10/24 19:14:12 stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+2016/10/24 19:14:12 ui: [1;32m==> virtualbox-iso: Running post-processor: vagrant[0m
+2016/10/24 19:14:12 ui: [1;32m==> virtualbox-iso (vagrant): Creating Vagrant box for 'virtualbox' provider[0m
+2016/10/24 19:14:12 ui: [0;32m    virtualbox-iso (vagrant): Copying from artifact: output/centos68-disk1.vmdk[0m
+2016/10/24 19:14:15 ui: [0;32m    virtualbox-iso (vagrant): Copying from artifact: output/centos68.ovf[0m
+2016/10/24 19:14:15 ui: [0;32m    virtualbox-iso (vagrant): Renaming the OVF to box.ovf...[0m
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Looking for OVF to rename...
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Looking for OVF in artifact...
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Renaming: '/var/folders/xf/j94wnxm11r5bvqvy6pm92g2xnt54lk/T/packer283610713/centos68.ovf' => box.ovf
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Looking for OVF for base mac address...
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Looking for OVF in artifact...
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Base mac address: 0800271B7096
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Turning dir into box: /var/folders/xf/j94wnxm11r5bvqvy6pm92g2xnt54lk/T/packer283610713 => centos72-x86_64.box
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Compressing with gzip compression level: -1
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Skipping directory '/var/folders/xf/j94wnxm11r5bvqvy6pm92g2xnt54lk/T/packer283610713' for box 'centos72-x86_64.box'
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Box add: '/var/folders/xf/j94wnxm11r5bvqvy6pm92g2xnt54lk/T/packer283610713/Vagrantfile' to 'centos72-x86_64.box'
+2016/10/24 19:14:15 ui: [0;32m    virtualbox-iso (vagrant): Compressing: Vagrantfile[0m
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Box add: '/var/folders/xf/j94wnxm11r5bvqvy6pm92g2xnt54lk/T/packer283610713/box.ovf' to 'centos72-x86_64.box'
+2016/10/24 19:14:15 ui: [0;32m    virtualbox-iso (vagrant): Compressing: box.ovf[0m
+2016/10/24 19:14:15 packer: 2016/10/24 19:14:15 Box add: '/var/folders/xf/j94wnxm11r5bvqvy6pm92g2xnt54lk/T/packer283610713/centos68-disk1.vmdk' to 'centos72-x86_64.box'
+2016/10/24 19:14:15 ui: [0;32m    virtualbox-iso (vagrant): Compressing: centos68-disk1.vmdk[0m
+2016/10/24 19:14:22 packer: 2016/10/24 19:14:22 Box add: '/var/folders/xf/j94wnxm11r5bvqvy6pm92g2xnt54lk/T/packer283610713/metadata.json' to 'centos72-x86_64.box'
+2016/10/24 19:14:22 ui: [0;32m    virtualbox-iso (vagrant): Compressing: metadata.json[0m
+2016/10/24 19:14:22 Deleting original artifact for build 'virtualbox-iso'
+2016/10/24 19:14:23 ui: [1;32mBuild 'virtualbox-iso' finished.[0m
+2016/10/24 19:14:23 Builds completed. Waiting on interrupt barrier...
+2016/10/24 19:14:23 ui: 
+==> Builds finished. The artifacts of successful builds are:
+2016/10/24 19:14:23 machine readable: virtualbox-iso,artifact-count []string{"1"}
+2016/10/24 19:14:23 machine readable: virtualbox-iso,artifact []string{"0", "builder-id", "mitchellh.post-processor.vagrant"}
+2016/10/24 19:14:23 machine readable: virtualbox-iso,artifact []string{"0", "id", "virtualbox"}
+2016/10/24 19:14:23 machine readable: virtualbox-iso,artifact []string{"0", "string", "'virtualbox' provider box: centos72-x86_64.box"}
+2016/10/24 19:14:23 machine readable: virtualbox-iso,artifact []string{"0", "files-count", "1"}
+2016/10/24 19:14:23 machine readable: virtualbox-iso,artifact []string{"0", "file", "0", "centos72-x86_64.box"}
+2016/10/24 19:14:23 machine readable: virtualbox-iso,artifact []string{"0", "end"}
+2016/10/24 19:14:23 ui: --> virtualbox-iso: 'virtualbox' provider box: centos72-x86_64.box
+2016/10/24 19:14:23 waiting for all plugin processes to complete...
+2016/10/24 19:14:23 /usr/local/Cellar/packer/0.10.2/bin/packer: plugin process exited
+2016/10/24 19:14:23 /usr/local/Cellar/packer/0.10.2/bin/packer: plugin process exited
